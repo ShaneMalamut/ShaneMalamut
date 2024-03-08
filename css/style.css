@@ -1,0 +1,212 @@
+/* Styling for common elements */
+body {
+    background: #567;
+    color: #bcd;
+    margin: 0;
+    font-family: "Times New Roman";
+}
+
+main {
+    padding: 50px;
+    padding-top: 135px;
+}
+
+h1, h2 {
+    font-family: Calibri, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: #aaf;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header styling */
+header {
+    height: 110px;
+    width: 100%;
+    background: #123;
+    margin: 0;
+    position: fixed;
+    box-shadow: 0 1px 10px #123a;
+    font-family: Calibri;
+    padding: 5px;
+    z-index: 10;
+}
+
+header .title-block {
+    width: 100%;
+    padding: 10px 50px;
+}
+
+header .title-block h1, header .title-block h2 {
+    display: inline;
+}
+
+header .title-block h1 {
+    padding-right: 15px;
+    border-right: 2px solid #567;
+    margin-right: 15px;
+}
+
+header .title-block h2 {
+    font-size: 100%;
+    position: relative;
+    bottom: 5px;
+}
+
+/* Navigation bar styling */
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    padding: 0 50px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+    float: left;
+}
+
+header nav a {
+    color: #bcd;
+    text-decoration: none;
+    background: #234;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #1237;
+    border: 2px solid #456;
+}
+
+header nav a:hover {
+    background: #456;
+}
+
+/* content section styling */
+section {
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #345 inset;
+    background: #456;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+section .content {
+    float: left;
+    clear: left;
+    position: relative;
+    height: 200px;
+    width: calc(100% - 200px);
+}
+
+section.main-panel p {
+    float: left;
+    clear: left;
+}
+
+section.album .image {
+    float: right;
+}
+
+section.album .image a {
+    height: 0;
+    display: block;
+}
+
+section.album .image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+section.album p, section.album h2 {
+    padding: 0 20px;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+section.album img:hover {
+    box-shadow: 0 0 5px 1px #0afa;
+    border-radius: 0;
+    transform: scale(1.05);
+}
+
+section.input {
+    width: 100%;
+    padding: 20px;
+}
+
+section .notes {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Misc. formatting */
+.hidden {
+    display: none;
+}
+
+section.upper {
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
+section.lower {
+    border-radius: 0 0 15px 15px;
+    margin-top: 5px;
+}
+
+/* Mobile accessibility */
+@media (max-width: 1000px) {
+    main {
+        padding-top: 10px;
+    }
+    
+    header {
+        height: 200px;
+        position: static;
+    }
+
+    header nav ul {
+        padding: 0 5px;
+    }
+
+    header ul li {
+        line-height: 50px;
+        font-size: 80%;
+    }
+
+    header .title-block {
+        padding: 0 5px;
+    }
+
+    header .title-block h2 {
+        font-size: 75%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section.album .image {
+        display: none;
+    }
+
+    section.album .content {
+        width: 100%;
+    }
+}
