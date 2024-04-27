@@ -99,12 +99,15 @@ section {
     border-radius: 15px;
     box-shadow: 0 0 20px #345 inset;
     background: #456;
-    width: calc(50% - 20px);
     box-sizing: border-box;
     position: relative;
 }
 
-section .content {
+section.album {
+    width: calc(50% - 20px);
+}
+
+section.album .content {
     float: left;
     clear: left;
     position: relative;
@@ -115,6 +118,10 @@ section .content {
 section.main-panel p {
     float: left;
     clear: left;
+}
+
+section .sample {
+    padding: 20px;
 }
 
 section.album .image {
