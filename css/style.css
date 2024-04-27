@@ -139,10 +139,28 @@ section.album p, section.album h2 {
     margin-top: 15px;
 }
 
-section.album img:hover {
+section.album .image img:hover {
     box-shadow: 0 0 5px 1px #0afa;
     border-radius: 0;
     transform: scale(1.05);
+}
+
+section.album .album-links {
+    float: left;
+    clear: left;
+    padding: 0 20px;
+}
+
+section.album .album-links img {
+    width: 25px;
+}
+
+section.album .album-links a:hover {
+    text-decoration: none;
+}
+
+section.album .album-links a:hover img {
+    transform: scale(1.15);
 }
 
 section.input {
