@@ -103,16 +103,28 @@ section {
     position: relative;
 }
 
+section {
+    width: 100%;
+}
+
 section.album {
     width: calc(50% - 20px);
 }
 
-section.album .content {
+section .content {
     float: left;
     clear: left;
     position: relative;
-    height: 200px;
+    width: 100%;
+}
+
+section.project .content {
+    padding-bottom: 40px;
+}
+
+section.album .content {
     width: calc(100% - 200px);
+    height: 200px;
 }
 
 section.main-panel p {
@@ -139,7 +151,7 @@ section.album .image img {
     border-radius: 15px;
 }
 
-section.album p, section.album h2 {
+section p, section h2 {
     padding: 0 20px;
     float: left;
     margin-bottom: 5px;
@@ -152,21 +164,21 @@ section.album .image img:hover {
     transform: scale(1.05);
 }
 
-section.album .album-links {
+.icon-links {
     float: left;
     clear: left;
     padding: 0 20px;
 }
 
-section.album .album-links img {
+.icon-links img {
     width: 25px;
 }
 
-section.album .album-links a:hover {
+.icon-links a:hover {
     text-decoration: none;
 }
 
-section.album .album-links a:hover img {
+.icon-links a:hover img {
     transform: scale(1.15);
 }
 
@@ -228,10 +240,22 @@ section.lower {
     }
 
     section.album .image {
-        display: none;
+        position: absolute;
+        right: 0;
     }
 
     section.album .content {
         width: 100%;
+        z-index: 10;
+        background: linear-gradient(to right, #456, #456a, #4560);
+        border-radius: 15px;
+    }
+
+    .flex-container .album {
+        width: 100%;
+    }
+
+    section .notes {
+        position: static;
     }
 }
