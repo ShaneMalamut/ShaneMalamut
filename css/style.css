@@ -30,6 +30,17 @@ a:hover {
     flex-wrap: wrap;
 }
 
+.headshot {
+    float: right;
+    width: 30%;
+}
+
+.headshot img {
+    border-radius: 1000px;
+    max-width: 100%;
+    box-shadow: #112a 2px 2px 5px;
+}
+
 /* Header styling */
 header {
     height: 110px;
