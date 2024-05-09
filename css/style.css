@@ -55,7 +55,6 @@ header {
 }
 
 header .title-block {
-    width: 100%;
     padding: 10px 50px;
 }
 
@@ -295,5 +294,9 @@ section.lower {
 
     section .notes {
         position: static;
+    }
+
+    .desktopOnly {
+        display: none;
     }
 }
