@@ -127,7 +127,7 @@ section.album .content {
     height: 200px;
 }
 
-section.main-panel p {
+section.main-panel p, section.main-panel ul {
     float: left;
     clear: left;
 }
@@ -190,6 +190,28 @@ section.input {
 section .notes {
     position: absolute;
     bottom: 0px;
+}
+
+section .notes img {
+    width: 20px;
+    padding: 0 5px;
+    top: 3px;
+    position: relative;
+}
+
+section .project-images {
+    float: left;
+    clear: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .project-images img {
+    max-height: 500px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: #112a 2px 2px 5px;
+    max-width: calc(100% - 40px);
 }
 
 /* Misc. formatting */
